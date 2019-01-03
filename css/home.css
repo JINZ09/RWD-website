@@ -2,33 +2,67 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-#gotop {
-    position:fixed;
-    z-index:90;
-    right:30px;
-    bottom:31px;
-    display:none;
-    width:50px;
-    height:50px;
-    color:#fff;
-    background:#33b5e5;
-    line-height:50px;
-    border-radius:50%;
-    transition:all 0.5s;
-    text-align: center;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+h1 {
+    padding-top: 90px;
 }
 
-
-#gotop :hover{
-    background:#0099CC;
+.top {
+    background-color: #1E1586;
+    color: white;
 }
 
-#sub-footer {
+.nav > li {
+    padding: 20px 135px 10px 137.5px;
+}
+
+.nav > li:hover {
+    background-color: white;
+    color: #1E1586;
+}
+
+h2 {
     text-align: center;
-    padding-top: 1%;
-    padding-bottom: 0.5%;
-    color:#fff;
-    background-color: blue;
-    margin-top: 5%;
+    padding-top: 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.text {
+    margin:40px;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    text-align: left;
+}
+
+.list > li {
+    padding:20px;
+} 
+
+.team {
+    background-color: #f2f2f2;
+    width:1366px;
+    margin-left: -120px;
+    padding:50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.item {
+    background-color: #BDBEFF;
+}
+
+#back {
+    background-image:url(back.png);
+    background-repeat: no-repeat;
+    background-position:right;
+    width: 100%;
+    padding-bottom: 70px;
+    margin-bottom: -30px;
+}
+
+#sample {
+    padding:10px;
 }
