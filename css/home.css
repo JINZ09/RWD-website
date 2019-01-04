@@ -39,19 +39,32 @@ h2 {
 
 .list > li {
     padding:20px;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
 } 
 
 .team {
     background-color: #f2f2f2;
     width:1366px;
     margin-left: -120px;
-    padding:50px;
+    padding:20px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .item {
     background-color: #BDBEFF;
+
+}
+
+.inx >span {
+    animation-name: flipInX;
+    animation-duration: 3s;
+}
+
+.left {
+    animation-name: fadeInRightBig;
+    animation-duration: 3s;
 }
 
 #back {
@@ -59,10 +72,67 @@ h2 {
     background-repeat: no-repeat;
     background-position:right;
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 10px;
     margin-bottom: -30px;
 }
 
-#sample {
-    padding:10px;
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
