@@ -75,6 +75,15 @@ h2 {
     margin-bottom: -30px;
 }
 
+#sub-footer {
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 0.5%;
+	color:#fff;
+	background-color: #083863;
+	margin-top: 5%;
+}
+
 @keyframes flipInX {
   from {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
